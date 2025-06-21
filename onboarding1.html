@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onboarding Slideshow</title>
+    <link rel="stylesheet" href="./onboarding1.css">
+</head>
+<body>
+    <div class="slideshow-container">
+        <div class="skip-container">
+            <button id="skip-btn" onclick="goToLast()">Skip</button>
+        </div>
+        <div class="slides-wrapper">
+            <div class="slide active">
+                <img id="slide-image" src="./onboarding -images/1.png" alt="Slide Image">
+                <h2 id="slide-title"></h2>
+                <p id="slide-description"></p>
+                <button id="next-btn" onclick="nextSlide()"></button>
+            </div>
+        </div>
+        <div class="dots-container">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </div>
+    <script src="./onboarding.js"></script>
+</body>
+</html>
